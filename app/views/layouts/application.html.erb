@@ -8,10 +8,8 @@
 </head>
 <body>
 
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-<%= link_to "PFNP", "http://www.pfnp.me" %>
+<%= render "layouts/header"	%><br>
 <%= yield %>
-
+<%= render "layouts/footer"	%>
 </body>
 </html>
