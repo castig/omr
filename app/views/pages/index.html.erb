@@ -1,1 +1,14 @@
-INDEX YO!
+<div class="center hero-unit">
+    <h1>Welcome! </h1>
+    <p>to <%= link_to 'One Month Rails',  "http://onemonthrails.com" %>
+     </p>
+
+    <% if user_signed_in? %>
+    	YOU ARE IN! 
+    <% else %> 
+    	NOT SIGNED IN 
+    <% end %>
+    <p> <%= link_to 'Sign up now!',  new_user_registration_path, :class => "btn btn-large btn-primary" %> </p>
+
+
+</div>

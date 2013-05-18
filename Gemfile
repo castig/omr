@@ -1,11 +1,20 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'devise'
+gem 'rake', ">=0.9.2"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+
+# group :production do
+#   gem 'pg'
+# end
+
 
 gem 'json'
 
@@ -20,6 +29,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+
 
 gem 'jquery-rails'
 

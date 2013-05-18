@@ -11,3 +11,25 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	padding-top: 10em;
+}
+ .container {
+ 	background: #EEE;
+ 	padding: 4em;
+ }
+
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+}
+
+.footer{
+    margin-top: 50px;
+    color: $grayLight;
+    a{
+        color: $gray;
+    }
+}
