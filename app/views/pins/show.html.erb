@@ -2,11 +2,13 @@
 <div class="row">
 	<div class="span6 offset3 well">
 		<p>
+		  <h2>Hello <%= @pin.user.name %></h2>
 		  <%= @pin.description %>
 		</p>
 
-
-		<%= link_to 'Edit', edit_pin_path(@pin) %> |
-		<%= link_to 'Back', pins_path %>
+		<% if current_user == @pin.user %>
+			<%= link_to 'Edit', edit_pin_path(@pin) %> |
+			<%= link_to 'Back', pins_path %>
+		<% end %>
 	</div>
 </div>
